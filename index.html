@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>nippon shop</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.green.css">
+</head>
+
+<body>
+
+	<div class="navbar">
+		<div class="container">
+			<div class="nav-logo">
+				<a class="logo" href="#"><img class="logo-img" src="img/logo.PNG" alt="logo"></a>
+				<input class="search-input" type="text" placeholder="Search...">
+			</div>
+			<div class="cart-info">
+				<span><i class="fas fa-cart-arrow-down fa-2x "></i></span>
+				<div class="cart-counter">0</div>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="sale-page">
+			<div class="sale-text">
+				<img class="sale-logo" src="img/sale3+1.PNG" alt="sale 3+1">
+				<button class="sale-button">Order <span class="primary">Now</span></button>
+			</div>
+		</div>
+		<div class="cart">
+
+			<div class="cart-total">
+				<h5>Total:</h5>
+				<h5>$ <strong class="card-total">0</strong> </h5>
+			</div>
+		</div>
+
+	</header>
+
+	</div>
+	<div class="shopping-list">
+		<div class="container">
+			<div class="menu">
+				<ul class="menu-list">
+					<li class="list-item"><a class="list-link" href="">JLPT</a></li>
+					<li class="list-item"><a class="list-link" href="">KANJI</a></li>
+					<li class="list-item"><a class="list-link" href="">Kitob</a></li>
+					<li class="list-item"><a class="list-link" href="">basd</a></li>
+					<li class="list-item"><a class="list-link" href="">Minim</a></li>
+				</ul>
+			</div>
+
+			<div class="books">
+				<div class="n5-list">
+					<h2 class="n5-books-title">JLPT N5 Books</h2>
+					<div class="book-list owl-carousel">
+						<template class="book-temp">
+							<div class="book-item">
+								<div class="img-container">
+									<img class="book-img" src="," alt="">
+									<span class="add-button">
+										<i class="fas fa-shopping-cart"></i>
+									</span>
+								</div>
+								<div class="book-body">
+									<h5 class="book-title"></h5>
+									<h5 class="book-price"></h5>
+								</div>
+							</div>
+						</template>
+					</div>
+				</div>
+				<div class="n4-list">
+					<h2 class="n5-books-title">JLPT N4 Books</h2>
+					<div class="book-listn4 owl-carousel">
+						<template class="book-tempn4">
+							<div class="book-item">
+								<div class="img-container">
+									<img class="book-img" src="" alt="">
+									<span class="add-button">
+										<i class="fas fa-shopping-cart"></i>
+									</span>
+								</div>
+								<div class="book-body">
+									<h5 class="book-title"></h5>
+									<h5 class="book-price"></h5>
+								</div>
+							</div>
+						</template>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/books.js"></script>
+	<script src="js/n4books.js"></script>
+	<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>
