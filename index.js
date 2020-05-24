@@ -2,6 +2,8 @@ var bookList = document.querySelector('.book-list');
 var bookTempElement = document.querySelector('.book-temp').content;
 var bookListn4 = document.querySelector('.book-listn4');
 var bookTempElementn4 = document.querySelector('.book-tempn4').content;
+var bookListn3 = document.querySelector('.book-listn3');
+var bookTempElementn3 = document.querySelector('.book-tempn3').content;
 
 
 
@@ -18,6 +20,13 @@ booksn4.forEach(function (book) {
     bookElements.querySelector('.book-title').textContent = book.name;
     bookElements.querySelector('.book-price').textContent = book.price;
     bookListn4.appendChild(bookElements);
+});
+booksn3.forEach(function (book) {
+    var bookElements = document.importNode(bookTempElementn3, true);
+    bookElements.querySelector('.book-img').src = book.img;
+    bookElements.querySelector('.book-title').textContent = book.name;
+    bookElements.querySelector('.book-price').textContent = book.price;
+    bookListn3.appendChild(bookElements);
 });
 
 
@@ -80,7 +89,7 @@ booksn4.forEach(function (book) {
                 }
             }
             cart.insertBefore(cartItem, total);
-            alert("item clicked");
+
             showtotal();
 
 

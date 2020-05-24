@@ -22,6 +22,13 @@ body {
 	background: var(--mainblack);
 	font-family: 'Poppins', sans-serif;
 }
+.top-btn {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+
+}
 .container {
 	width: 90%;
 	min-height: 100vh;
@@ -77,12 +84,13 @@ body {
 	justify-content: space-around;
 }
 .sale-page {
+	height: 50vh;
 	background: url(img/thought-catalog-o0Qqw21-0NI-unsplash.jpg) no-repeat center/cover;
 	width: 100%;
-	height: 50vh;
 }
 .sale-text {
 	padding: 100px 0 0 100px;
+	
 }
 .sale-logo {
 	height: 100px;
@@ -126,26 +134,32 @@ body {
 	transform: translateX(0);
 }
 .menu {
+	position: sticky;
+	
 	width: 15%;
 	background: var(--mainblack);
 }
 .menu-list {
 	list-style: none;
+	position: sticky;
+	top: 50%;
 }
 
 .list-item {
-	padding: 10px;
-	border: 1px gray solid;
+	padding: 5px;
+	outline: 0.1px gray solid;
+	margin-bottom: 1px;
 }
 .list-link {
 	text-decoration: none;
 	color: #fff;
 }
 .books {
+	position: relative ;
 	padding-left: 20px;
 	width: 85%;
 	background: var(--mainblack);;
-	border-left: 1px gray solid;
+	border-left: 0.5px gray solid;
 }
 .n5-books-title {
 	margin-bottom: 20px;
